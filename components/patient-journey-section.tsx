@@ -56,9 +56,9 @@ export function PatientJourneySection() {
         <div className="text-center space-y-6 mb-16">
           <div className="inline-flex items-center gap-2 bg-government-orange/10 text-government-orange px-4 py-2 rounded-full text-sm font-medium">
             <Award className="h-4 w-4" />
-            Digital India Healthcare Process
+            Sehat Sathi
           </div>
-          <h2 className="text-3xl lg:text-5xl font-bold text-balance">Your Healthcare Journey</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-balance">AI powered rural healthcare access.</h2>
           <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
             From symptom entry to treatment - a seamless 8-step process designed for rural communities.
           </p>
