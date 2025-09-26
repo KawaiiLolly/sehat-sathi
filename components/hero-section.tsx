@@ -54,7 +54,7 @@ export function HeroSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary/5 bg-transparent"
+                  className="text-lg px-8 py-6 border-primary text-primary bg-transparent"
                 >
                   {t("hero.demo")}
                   <Video className="ml-2 h-5 w-5" />
@@ -116,7 +116,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="bg-primary text-primary-foreground py-16">
+      {/* <div className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
@@ -124,7 +124,7 @@ export function HeroSection() {
               <div className="text-primary-foreground/80">{t("stats.patients")}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold mb-2">12K+</div>
+              <div className="text-3xl lg:text-4xl font-bold mb-2">1K+</div>
               <div className="text-primary-foreground/80">{t("stats.doctors")}</div>
             </div>
             <div className="text-center">
@@ -137,7 +137,7 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }

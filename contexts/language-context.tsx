@@ -14,7 +14,7 @@ interface LanguageContextType {
 const translations = {
   en: {
     // Homepage - Government Style
-    "hero.title": "Digital India Healthcare Initiative",
+    "hero.title": "SEHAT SATHI Healthcare Initiative",
     "hero.subtitle": "Empowering Rural Communities with AI-Powered Telemedicine Solutions",
     "hero.cta": "Access Healthcare Now",
     "hero.demo": "Watch Demo",
