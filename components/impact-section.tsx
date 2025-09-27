@@ -84,7 +84,7 @@ export function ImpactSection() {
           <div className="relative z-10">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Award className="h-6 w-6" />
-              <span className="text-lg font-semibold">Smart India Hackathon 2024</span>
+              <span className="text-lg font-semibold">Smart India Hackathon 2025</span>
             </div>
             <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-balance">
               Ready to Transform Healthcare in Your Community?
