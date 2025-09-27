@@ -45,7 +45,6 @@ export function Footer() {
               <a href="/auth/pharmacy" className="block hover:underline">
                 Pharmacy Dashboard
               </a>
-              
             </div>
           </div>
 
