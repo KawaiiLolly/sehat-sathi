@@ -218,17 +218,16 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguage] = useState<Language>("en")
+  const [language, setLanguage] = useState<Language | null>(null) // null initially
 
-    useEffect(() => {
+  useEffect(() => {
     const savedLanguage = localStorage.getItem("language") as Language
     if (savedLanguage && ["en", "hi", "pa"].includes(savedLanguage)) {
       setLanguage(savedLanguage)
     } else {
-      setLanguage("en") 
+      setLanguage("en") // default
     }
   }, [])
-
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)
@@ -236,9 +235,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }
 
   const t = (key: string): string => {
+    if (!language) return "" // don’t render anything until language is loaded
     const dict = translations[language] || translations.en
     return dict[key as keyof typeof dict] || key
   }
+
+  // Only render children after language is initialized
+  if (!language) return null
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
@@ -246,6 +249,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     </LanguageContext.Provider>
   )
 }
+
 
 export function useLanguage() {
   const context = useContext(LanguageContext)
