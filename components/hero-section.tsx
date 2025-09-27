@@ -1,13 +1,17 @@
 "use client"
 
+import { X } from "lucide-react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Video, Shield, Brain, Clock, Award, Users, MapPin } from "lucide-react"
 import Link from "next/link"
 import { useLanguage } from "@/contexts/language-context"
 import { LanguageSwitcher } from "./language-switcher"
+import VideoModal from "@/components/VideoModal";
 
 export function HeroSection() {
   const { t } = useLanguage()
+  const [showVideo, setShowVideo] = useState(false)
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
@@ -54,12 +58,21 @@ export function HeroSection() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="text-lg px-8 py-6 border-primary text-primary  bg-transparent"
+                  className="text-lg px-8 py-6 border-primary text-primary bg-transparent flex items-center"
+                  onClick={() => setShowVideo(true)}
                 >
                   {t("hero.demo")}
                   <Video className="ml-2 h-5 w-5" />
                 </Button>
               </div>
+
+              <VideoModal
+                isOpen={showVideo}
+                onClose={() => setShowVideo(false)}
+                videoSrc="/hero-demo-video.mp4"
+                title="Sehat Sathi - Walkthrough"
+                autoPlay={true}
+              />
 
               {/* Government trust indicators */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
