@@ -3,7 +3,7 @@
 import type React from "react"
 import { createContext, useContext, useState, useEffect } from "react"
 
-type Language = "en" | "hi" | "bn"
+type Language = "en" | "hi" | "pa"
 
 interface LanguageContextType {
   language: Language
@@ -39,14 +39,6 @@ const translations = {
     "nav.about": "About Initiative",
     "nav.contact": "Contact Support",
     "nav.portal": "Healthcare Portal",
-
-    // Homepage
-    // "hero.title": "AI-Powered Healthcare for Rural Communities",
-    // "hero.subtitle": "Connecting patients with doctors through intelligent telemedicine solutions",
-    // "hero.cta": "Get Started",
-    // "nav.home": "Home",
-    // "nav.about": "About",
-    // "nav.contact": "Contact",
 
     // Get Started Page
     "getStarted.title": "Choose Your Role",
@@ -115,14 +107,6 @@ const translations = {
     "nav.contact": "सहायता संपर्क",
     "nav.portal": "स्वास्थ्य पोर्टल",
 
-    // Homepage
-    // "hero.title": "ग्रामीण समुदायों के लिए AI-संचालित स्वास्थ्य सेवा",
-    // "hero.subtitle": "बुद्धिमान टेलीमेडिसिन समाधानों के माध्यम से मरीजों को डॉक्टरों से जोड़ना",
-    // "hero.cta": "शुरू करें",
-    // "nav.home": "होम",
-    // "nav.about": "हमारे बारे में",
-    // "nav.contact": "संपर्क",
-
     // Get Started Page
     "getStarted.title": "अपनी भूमिका चुनें",
     "getStarted.subtitle": "चुनें कि आप सेहत साथी का उपयोग कैसे करना चाहते हैं",
@@ -162,80 +146,72 @@ const translations = {
     next: "आगे",
     loading: "लोड हो रहा है...",
   },
-  bn: {
+  pa: {
     // Homepage - Government Style
-    "hero.title": "ডিজিটাল ইন্ডিয়া স্বাস্থ্য উদ্যোগ",
-    "hero.subtitle": "AI-চালিত টেলিমেডিসিন সমাধান দিয়ে গ্রামীণ সম্প্রদায়কে ক্ষমতায়ন",
-    "hero.cta": "এখনই স্বাস্থ্যসেবা নিন",
-    "hero.demo": "ডেমো দেখুন",
-    "hero.secure": "সরকারি প্রত্যয়িত",
-    "hero.ai": "AI-চালিত নির্ণয়",
-    "hero.live": "২৪/৭ উপলব্ধ",
+    "hero.title": "ਡਿਜ਼ਿਟਲ ਇੰਡੀਆ ਸਿਹਤ ਪਹਿਲ",
+    "hero.subtitle": "AI-ਚਲਿਤ ਟੈਲੀਮੇਡਿਸਿਨ ਹੱਲਾਂ ਨਾਲ ਪਿੰਡਾਂ ਦੀਆਂ ਕਮਿਊਨਿਟੀਆਂ ਨੂੰ ਸਸ਼ਕਤ ਕਰਨਾ",
+    "hero.cta": "ਹੁਣ ਹੀ ਸਿਹਤ ਸੇਵਾਵਾਂ ਪ੍ਰਾਪਤ ਕਰੋ",
+    "hero.demo": "ਡੈਮੋ ਵੇਖੋ",
+    "hero.secure": "ਸਰਕਾਰੀ ਪ੍ਰਮਾਣਿਤ",
+    "hero.ai": "AI-ਚਲਿਤ ਨਿਧਾਨ",
+    "hero.live": "24/7 ਉਪਲਬਧ",
 
     // Government Stats
-    "stats.patients": "সেবাপ্রাপ্ত রোগী",
-    "stats.doctors": "নিবন্ধিত ডাক্তার",
-    "stats.consultations": "সম্পন্ন পরামর্শ",
-    "stats.villages": "সংযুক্ত গ্রাম",
+    "stats.patients": "ਸੇਵਾ ਪ੍ਰਾਪਤ ਮਰੀਜ਼",
+    "stats.doctors": "ਰਜਿਸਟਰਡ ਡਾਕਟਰ",
+    "stats.consultations": "ਸੰਪਰਕ ਪੂਰੇ ਹੋਏ",
+    "stats.villages": "ਜੁੜੇ ਪਿੰਡ",
 
     // Government Features
-    "govt.initiative": "একটি স্মার্ট ইন্ডিয়া হ্যাকাথন উদ্যোগ",
-    "govt.ministry": "স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়",
-    "govt.digital": "ডিজিটাল ইন্ডিয়া মিশন",
-    "govt.certified": "সরকারি প্রত্যয়িত প্ল্যাটফর্ম",
+    "govt.initiative": "ਇੱਕ ਸਮਾਰਟ ਇੰਡੀਆ ਹੈਕਾਥਾਨ ਪਹਿਲ",
+    "govt.ministry": "ਸਿਹਤ ਅਤੇ ਪਰਿਵਾਰ ਕਲਿਆਣ ਮੰਤਰਾਲਾ",
+    "govt.digital": "ਡਿਜ਼ਿਟਲ ਇੰਡੀਆ ਮਿਸ਼ਨ",
+    "govt.certified": "ਸਰਕਾਰੀ ਪ੍ਰਮਾਣਿਤ ਪਲੇਟਫਾਰਮ",
 
     // Navigation
-    "nav.home": "হোম",
-    "nav.about": "উদ্যোগ সম্পর্কে",
-    "nav.contact": "সহায়তা যোগাযোগ",
-    "nav.portal": "স্বাস্থ্য পোর্টাল",
-
-    // Homepage
-    // "hero.title": "গ্রামীণ সম্প্রদায়ের জন্য AI-চালিত স্বাস্থ্যসেবা",
-    // "hero.subtitle": "বুদ্ধিমান টেলিমেডিসিন সমাধানের মাধ্যমে রোগীদের ডাক্তারদের সাথে সংযুক্ত করা",
-    // "hero.cta": "শুরু করুন",
-    // "nav.home": "হোম",
-    // "nav.about": "আমাদের সম্পর্কে",
-    // "nav.contact": "যোগাযোগ",
+    "nav.home": "ਹੋਮ",
+    "nav.about": "ਪਹਿਲ ਬਾਰੇ",
+    "nav.contact": "ਸਹਾਇਤਾ ਸੰਪਰਕ",
+    "nav.portal": "ਸਿਹਤ ਪੋਰਟਲ",
 
     // Get Started Page
-    "getStarted.title": "আপনার ভূমিকা বেছে নিন",
-    "getStarted.subtitle": "আপনি কীভাবে সেহত সাথী ব্যবহার করতে চান তা নির্বাচন করুন",
-    "patient.title": "রোগী",
-    "patient.description": "যোগ্য ডাক্তারদের কাছ থেকে চিকিৎসা পরামর্শ নিন",
-    "doctor.title": "ডাক্তার",
-    "doctor.description": "রোগীদের চিকিৎসা পরামর্শ প্রদান করুন",
-    "pharmacy.title": "ফার্মেসি",
-    "pharmacy.description": "প্রেসক্রিপশন এবং ওষুধের তালিকা পরিচালনা করুন",
+    "getStarted.title": "ਆਪਣੀ ਭੂਮਿਕਾ ਚੁਣੋ",
+    "getStarted.subtitle": "ਚੁਣੋ ਕਿ ਤੁਸੀਂ ਸਿਹਤ ਸਾਥੀ ਨੂੰ ਕਿਵੇਂ ਵਰਤਣਾ ਚਾਹੁੰਦੇ ਹੋ",
+    "patient.title": "ਮਰੀਜ਼",
+    "patient.description": "ਯੋਗ ਡਾਕਟਰਾਂ ਤੋਂ ਸਲਾਹ ਲਵੋ",
+    "doctor.title": "ਡਾਕਟਰ",
+    "doctor.description": "ਮਰੀਜ਼ਾਂ ਨੂੰ ਸਲਾਹ ਪ੍ਰਦਾਨ ਕਰੋ",
+    "pharmacy.title": "ਫਾਰਮੇਸੀ",
+    "pharmacy.description": "ਨੁਸਖ਼ਿਆਂ ਅਤੇ ਦਵਾਈਆਂ ਦੀ ਸੂਚੀ ਸੰਭਾਲੋ",
 
     // Patient Dashboard - Simple
-    "patient.welcome": "আপনার স্বাস্থ্য সেবায় স্বাগতম",
-    "patient.step1": "আপনার সমস্যা বলুন",
-    "patient.step1.desc": "আজ আপনার কী সমস্যা?",
-    "patient.step2": "ডাক্তার খুঁজুন",
-    "patient.step2.desc": "আমরা আপনার জন্য সঠিক ডাক্তার খুঁজে দেব",
-    "patient.step3": "ডাক্তারের সাথে কথা বলুন",
-    "patient.step3.desc": "ডাক্তারের সাথে ভিডিও কল করুন এবং ওষুধ নিন",
-    "patient.start": "এখানে শুরু করুন",
-    "patient.continue": "এগিয়ে যান",
-    "patient.completed": "সম্পন্ন",
+    "patient.welcome": "ਤੁਹਾਡੇ ਸਿਹਤ ਸੇਵਾ ਵਿੱਚ ਸੁਆਗਤ ਹੈ",
+    "patient.step1": "ਸਾਨੂੰ ਆਪਣੀ ਸਮੱਸਿਆ ਦੱਸੋ",
+    "patient.step1.desc": "ਅੱਜ ਤੁਹਾਨੂੰ ਕੀ ਤੰਗ ਕਰ ਰਿਹਾ ਹੈ?",
+    "patient.step2": "ਡਾਕਟਰ ਲੱਭੋ",
+    "patient.step2.desc": "ਅਸੀਂ ਤੁਹਾਡੇ ਲਈ ਸਹੀ ਡਾਕਟਰ ਲੱਭਾਂਗੇ",
+    "patient.step3": "ਡਾਕਟਰ ਨਾਲ ਗੱਲ ਕਰੋ",
+    "patient.step3.desc": "ਡਾਕਟਰ ਨਾਲ ਵੀਡੀਓ ਕਾਲ ਕਰੋ ਅਤੇ ਦਵਾਈ ਲਵੋ",
+    "patient.start": "ਇੱਥੋਂ ਸ਼ੁਰੂ ਕਰੋ",
+    "patient.continue": "ਜਾਰੀ ਰੱਖੋ",
+    "patient.completed": "ਮੁਕੰਮਲ",
 
     // Symptoms
-    "symptoms.title": "আপনার সমস্যা কী?",
-    "symptoms.subtitle": "আপনি যা অনুভব করছেন তাতে ক্লিক করুন",
-    "symptoms.fever": "জ্বর",
-    "symptoms.cough": "কাশি",
-    "symptoms.headache": "মাথা ব্যথা",
-    "symptoms.stomach": "পেট ব্যথা",
-    "symptoms.cold": "ঠান্ডা",
-    "symptoms.bodyache": "শরীর ব্যথা",
-    "symptoms.next": "পরবর্তী ধাপ",
+    "symptoms.title": "ਤੁਹਾਡੀ ਸਮੱਸਿਆ ਕੀ ਹੈ?",
+    "symptoms.subtitle": "ਜੋ ਤੁਸੀਂ ਮਹਿਸੂਸ ਕਰ ਰਹੇ ਹੋ, ਉਸ 'ਤੇ ਕਲਿੱਕ ਕਰੋ",
+    "symptoms.fever": "ਬੁਖਾਰ",
+    "symptoms.cough": "ਖੰਘ",
+    "symptoms.headache": "ਸਿਰ ਦਰਦ",
+    "symptoms.stomach": "ਪੇਟ ਦਰਦ",
+    "symptoms.cold": "ਜ਼ੁਕਾਮ",
+    "symptoms.bodyache": "ਸ਼ਰੀਰ ਦਰਦ",
+    "symptoms.next": "ਅਗਲਾ ਕਦਮ",
 
     // Common
-    logout: "লগআউট",
-    back: "ফিরে",
-    next: "পরবর্তী",
-    loading: "লোড হচ্ছে...",
+    logout: "ਲਾਗਆਉਟ",
+    back: "ਵਾਪਸ",
+    next: "ਅੱਗੇ",
+    loading: "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
   },
 }
 
@@ -246,8 +222,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language") as Language
-    if (savedLanguage && ["en", "hi", "bn"].includes(savedLanguage)) {
+    if (savedLanguage && ["en", "hi", "pa"].includes(savedLanguage)) {
       setLanguage(savedLanguage)
+    } else {
+      setLanguage("pa") // fallback
     }
   }, [])
 
@@ -257,7 +235,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }
 
   const t = (key: string): string => {
-    return translations[language][key as keyof (typeof translations)[typeof language]] || key
+    const dict = translations[language] || translations.pa
+    return dict[key as keyof typeof dict] || key
   }
 
   return (

@@ -36,12 +36,19 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold">Quick Links</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <div>Patient Portal</div>
-              <div>Doctor Dashboard</div>
-              <div>Admin Panel</div>
-              <div>Support Center</div>
+              <a href="/auth/patient" className="block hover:underline">
+                Patient Portal
+              </a>
+              <a href="/auth/doctor" className="block hover:underline">
+                Doctor Dashboard
+              </a>
+              <a href="/auth/pharmacy" className="block hover:underline">
+                Pharmacy Dashboard
+              </a>
+              
             </div>
           </div>
+
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">

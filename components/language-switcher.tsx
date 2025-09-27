@@ -10,7 +10,7 @@ export function LanguageSwitcher() {
   const languages = [
     { code: "en", name: "English", flag: "🇺🇸" },
     { code: "hi", name: "हिंदी", flag: "🇮🇳" },
-    { code: "bn", name: "বাংলা", flag: "🇧🇩" },
+    { code: "pa", name: "ਪੰਜਾਬੀ", flag: "🇮🇳" },
   ]
 
   return (
