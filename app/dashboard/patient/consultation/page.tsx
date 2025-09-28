@@ -549,9 +549,9 @@ Symptoms Treated: ${prescription.symptoms.join(", ")}
                   <p>
                     <span className="font-medium">Location:</span> {selectedDoctor.location}
                   </p>
-                  <p>
+                  {/* <p>
                     <span className="font-medium">Fee:</span> {selectedDoctor.consultationFee}
-                  </p>
+                  </p> */}
                 </div>
               </CardContent>
             </Card>
@@ -608,10 +608,10 @@ Symptoms Treated: ${prescription.symptoms.join(", ")}
                   <span>Status:</span>
                   <Badge variant="secondary">In Progress</Badge>
                 </div>
-                {/* <div className="flex justify-between">
-                  <span>Fee:</span>
-                  <span>{selectedDoctor.consultationFee}</span>
-                </div> */}
+                <div className="flex justify-between">
+                  <span>Meeting ID:</span>
+                  <span>tuv-r4bq-zsn</span>
+                </div>
               </CardContent>
             </Card>
           </div>

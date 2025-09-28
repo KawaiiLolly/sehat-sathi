@@ -190,10 +190,10 @@ export default function DoctorMatchPage() {
                           <Clock className="h-4 w-4 text-muted-foreground" />
                           <span className="text-green-600 font-medium">{doctor.availability}</span>
                         </div>
-                        <div>
+                        {/* <div>
                           <span className="font-semibold text-primary">{doctor.consultationFee}</span>
                           <span className="text-muted-foreground"> consultation</span>
-                        </div>
+                        </div> */}
                       </div>
 
                       <div>
