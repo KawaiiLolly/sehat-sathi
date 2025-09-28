@@ -41,7 +41,7 @@ export default function DoctorDashboard() {
       : [
           {
             id: 1,
-            patientName: "John Doe",
+            patientName: "Kabir Singh",
             age: 34,
             symptoms: ["Fever", "Cough", "Fatigue"],
             urgency: "Medium",
@@ -50,7 +50,7 @@ export default function DoctorDashboard() {
           },
           {
             id: 2,
-            patientName: "Sarah Smith",
+            patientName: "Navya Kaur",
             age: 28,
             symptoms: ["Headache", "Nausea", "Dizziness"],
             urgency: "High",
@@ -59,7 +59,7 @@ export default function DoctorDashboard() {
           },
           {
             id: 3,
-            patientName: "Mike Johnson",
+            patientName: "Ishaan Singh",
             age: 45,
             symptoms: ["Back pain", "Stiffness"],
             urgency: "Low",
@@ -83,14 +83,14 @@ export default function DoctorDashboard() {
       : [
           {
             id: 1,
-            patientName: "Alice Cooper",
+            patientName: "Tejas Paji",
             medication: "Amoxicillin 500mg",
             date: "Today",
             status: "Sent to pharmacy",
           },
           {
             id: 2,
-            patientName: "Bob Taylor",
+            patientName: "Daya Devi",
             medication: "Ibuprofen 400mg",
             date: "Yesterday",
             status: "Dispensed",

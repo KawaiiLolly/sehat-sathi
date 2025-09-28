@@ -44,7 +44,7 @@ export default function ConsultationPage() {
   ])
 
   const patientData = {
-    name: "John Doe",
+    name: "Kabir Singh",
     age: 34,
     symptoms: ["Fever", "Cough", "Fatigue"],
     urgency: "Medium",

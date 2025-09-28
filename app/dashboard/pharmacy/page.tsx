@@ -35,8 +35,8 @@ export default function PharmacyDashboard() {
   const pendingPrescriptions = [
     {
       id: 1,
-      patientName: "John Doe",
-      doctorName: "Dr. Sarah Johnson",
+      patientName: "Kabir Singh",
+      doctorName: "Dr. Jasmine Kaur",
       medications: ["Amoxicillin 500mg", "Paracetamol 500mg"],
       status: "pending",
       submittedAt: "2 hours ago",
@@ -44,8 +44,8 @@ export default function PharmacyDashboard() {
     },
     {
       id: 2,
-      patientName: "Alice Cooper",
-      doctorName: "Dr. Michael Chen",
+      patientName: "Tejas Paji",
+      doctorName: "Dr. Amarjeet Singh",
       medications: ["Ibuprofen 400mg"],
       status: "ready",
       submittedAt: "4 hours ago",

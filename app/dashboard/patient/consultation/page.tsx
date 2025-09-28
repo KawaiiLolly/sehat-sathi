@@ -151,7 +151,7 @@ export default function PatientConsultationPage() {
     const newPrescription = {
       id: Date.now(),
       medications,
-      doctorName: selectedDoctor?.name || "Dr. Sarah Johnson",
+      doctorName: selectedDoctor?.name || "Dr. Jasmine Kaur",
       date: new Date().toLocaleDateString(),
       notes,
       symptoms: aiAnalysis.symptoms,
@@ -239,7 +239,7 @@ Symptoms Treated: ${prescription.symptoms.join(", ")}
       submittedAt: new Date().toLocaleString(),
       triageResult: aiAnalysis?.condition || "General consultation",
       consultationDate: new Date().toLocaleDateString(),
-      doctorName: selectedDoctor?.name || "Dr. Sarah Johnson",
+      doctorName: selectedDoctor?.name || "Dr. Jasmine Kaur",
       prescription: prescription,
       status: "completed",
     }

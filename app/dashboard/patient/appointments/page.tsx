@@ -10,7 +10,7 @@ export default function AppointmentsPage() {
   const appointments = [
     {
       id: 1,
-      doctorName: "Dr. Sarah Johnson",
+      doctorName: "Dr. Jasmine Kaur",
       specialty: "General Medicine",
       date: "Today",
       time: "2:00 PM",
@@ -19,7 +19,7 @@ export default function AppointmentsPage() {
     },
     {
       id: 2,
-      doctorName: "Dr. Michael Chen",
+      doctorName: "Dr. Amarjeet Singh",
       specialty: "Internal Medicine",
       date: "Tomorrow",
       time: "10:30 AM",

@@ -18,7 +18,7 @@ export default function CaseDetailPage() {
   // Mock case data - in real app, this would be fetched based on ID
   const caseData = {
     id: params.id,
-    patientName: "John Doe",
+    patientName: "Kabir Singh",
     age: 34,
     gender: "Male",
     symptoms: ["Fever", "Cough", "Fatigue"],
