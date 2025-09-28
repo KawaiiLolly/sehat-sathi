@@ -608,10 +608,10 @@ Symptoms Treated: ${prescription.symptoms.join(", ")}
                   <span>Status:</span>
                   <Badge variant="secondary">In Progress</Badge>
                 </div>
-                <div className="flex justify-between">
+                {/* <div className="flex justify-between">
                   <span>Fee:</span>
                   <span>{selectedDoctor.consultationFee}</span>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </div>

@@ -84,13 +84,14 @@ export default function GetStartedPage() {
                 <li>• Patient history access</li>
               </ul>
               <Link href="/auth/doctor" className="block">
-                <Button
-                  className="w-full border-accent text-accent hover:bg-accent/5 bg-transparent"
-                  size="lg"
-                  variant="outline"
-                >
-                  Continue as {t("doctor.title")}
-                </Button>
+               <Button
+                className="w-full bg-green-600 hover:bg-green-500 text-white"
+                size="lg"
+              >
+                Continue as {t("doctor.title")}
+              </Button>
+
+
               </Link>
             </CardContent>
           </Card>
@@ -112,7 +113,7 @@ export default function GetStartedPage() {
               </ul>
               <Link href="/auth/pharmacy" className="block">
                 <Button
-                  className="w-full bg-government-orange hover:bg-government-orange/90 text-government-orange-foreground"
+                  className="w-full bg-orange-600 hover:bg-orange-500 text-white"
                   size="lg"
                 >
                   Continue as {t("pharmacy.title")}
